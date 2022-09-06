@@ -1,0 +1,152 @@
+.header{
+    background-color: #341f97;
+}
+.header img{
+    width: 100px;
+}
+
+/* menu */
+.header-menu{
+
+}
+.header-menu ul{
+    margin-bottom: 0;
+}
+.header-menu ul li{
+    display: inline-block;
+}
+.header-menu ul li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 25px;
+    line-height: 50px;
+    position: relative;
+}
+.header-menu ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    width: 0;
+    height: 2%;
+    background-color: #fff;
+    transition: 1s;
+
+}
+.header-menu ul li a:hover:after{
+    width: 100%;
+    
+}
+
+/* banner part */
+.banner {
+    background-image: url(./intro-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 384px 0;
+}
+.banner-text{
+    color: #fff;
+}
+.banner-text a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 21px;
+    border: 1px solid #ddd;
+    background-color: #00d2d3;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 32px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+
+    
+}
+.banner-text a::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;   
+    transition: 1s;
+    border-radius: 5px;
+}
+.banner-text a:hover::before{
+    background-color: #341f97;
+    width: 100%;
+
+}
+
+/* meet section */
+.meet-section{
+    background-color: rgb(214, 162, 232);
+    padding: 59px 0;
+}
+.person{
+    background-color: rgb(214, 162, 232);
+}
+.person img {
+    height: 400px;
+    width: auto;
+    
+  }
+  .person h5 {
+    padding: 10px 0;
+  }
+  .person h4 a {
+    padding: 25px 0;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    padding: 5px 5px;
+    background-color: #1B9CFC;
+    color: #fff;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+
+  /* About section */
+  .about {
+    background-color: #a5b1c2;
+    padding: 20px 0;
+
+  }
+  .contant{
+    background-color: #a5b1c2;
+    padding: 54px 0;
+  }
+  .contant .about-right h1{
+    font-size: 25px;
+  }
+
+  /* contact section */
+  .contact {
+    background-color: #ddd;
+    padding: 10px 0;
+}
+.contact h1{
+    padding: 30px 0;
+
+  }
+  .contact input{
+    height: 40px;
+    width: 500px;
+  }
+  .contact textarea{
+    width: 500px;
+    height: 100px;
+  }
+  .contact .submit{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    background-color: #00d2d3;
+    border-radius: 5px;
+  }
+  .footer{
+    background-color: blue;
+    color: #fff;
+  }
